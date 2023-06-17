@@ -129,10 +129,13 @@
     margin-right: .25rem
 
 
-.profile__description
-  text-align: center
+.profile
+  &__description
+    text-align: center
 
-.education
+
+.education,
+.experience
   &__content
     display: flex
   &__time
@@ -160,3 +163,29 @@
     color: $title-color
   &__year
     font-size: $smaller-font-size
+
+
+.skills
+  &__content
+    grid-template-columns: repeat(2, 1fr)
+    gap: 0
+  &__name
+    display: flex
+    align-items: center
+    margin-bottom: $mb-3
+  &__circle
+    display: inline-block
+    width: 5px
+    height: 5px
+    background-color: $text-color
+    border-radius: 50%
+    margin-right: .75rem
+
+
+.certificates
+  &__title
+    font-size: $h3-font-size
+    margin-bottom: $mb-1
+
+
+
