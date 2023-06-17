@@ -1,0 +1,66 @@
+/*=== Colors ===*/
+/*=== Font and typography ===*/
+/*=== Font weight ===*/
+/*=== Margenes ===*/
+/*=== z index ===*/
+/*=== Colors ===*/
+/*=== Font and typography ===*/
+/*=== Font weight ===*/
+/*=== Margenes ===*/
+/*=== z index ===*/
+/*=== BASE ===*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: #FCFCFC;
+  color: #403A3A;
+}
+
+h1, h2, h3, ul, p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #0B0A0A;
+  font-weight: 500;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 1.5rem 0;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #0B0A0A;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
