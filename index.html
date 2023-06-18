@@ -8,7 +8,7 @@
     <title>Résumé</title>
     <link rel="stylesheet" href="sass/styles.css">
 </head>
-<body>
+<body class="">
 <header class="l-header" id="header">
     <nav class="nav bd-container">
         <a href="#" class="nav__logo">Dmytro Riabtsun</a>
@@ -53,7 +53,7 @@
     </nav>
 </header>
 <main class="l-main bd-container">
-    <div class="resume">
+    <div class="resume" id="area-cv">
         <div class="resume__left">
             <section class="home" id="home">
                 <div class="home__container section bd-grid">
@@ -77,6 +77,8 @@
                         </span>
                     </div>
                 </div>
+                <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
             </section>
             <section class="social section">
                 <h2 class="section-title">SOCIAL</h2>
@@ -237,14 +239,19 @@
                         <i class='bx bx-comment-detail interests__icon'></i>
                         <span class="interests__name">Politics</span>
                     </div>
+                    <div class="interests__content">
+                        <i class='bx bx-book interests__icon'></i>
+                        <span class="interests__name">Read</span>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
 </main>
 <a href="#" class="scrolltop" id="scroll-top">
-    <i class='bx bx-up-arrow-alt scrolltop__icon' ></i>
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
 </a>
+<script src="js/html2pdf.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

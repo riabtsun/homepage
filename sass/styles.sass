@@ -244,3 +244,80 @@
 .show-scroll
   visibility: visible
   bottom: 5rem
+
+.change-theme
+  position: absolute
+  right: 0
+  top: 2.2rem
+  display: flex
+  color: $text-color
+  font-size: 1.2rem
+  cursor: pointer
+  &:hover
+    color: $title-color
+
+.generate-pdf
+  display: none
+  position: absolute
+  top: 2.2rem
+  left: 0
+  color: $text-color
+  cursor: pointer
+  &:hover
+    color: $text-color
+  @media screen and (min-width: 968px)
+    display: inline-block
+
+.scale-cv .change-theme,
+.scale-cv .generate-pdf
+  display: none
+
+.scale-cv
+  .bd-container
+    max-width: 650px
+  .section
+    padding: 1.5rem 0 .80rem
+    &-title
+      margin-bottom: .75rem
+  .resume__left,
+  .resume__right
+    padding: 0 1rem
+  .home__img
+    width: 90px
+    height: 90px
+  .home__container
+    gap: 1.5rem
+  .home__data
+    gap: .25rem
+  .home__address,
+  .social__container
+    gap: .75rem
+  .home__icon,
+  .social__icon,
+  .interests__icon
+    font-size: 1rem
+  .education__container,
+  .experience__container,
+  .certificates__container
+    gap: 1rem
+  .education__time,
+  .experience__time
+    gap: .5rem
+  .education__rounder,
+  .experience__rounder
+    width: 11px
+    height: 11px
+    margin-top: .22rem
+  .education__line,
+  .experience__line
+    width: 1px
+    height: 110%
+    transform: translate(5px, 0)
+  .education__data,
+  .experience__data
+    gap: .25rem
+  .skills__name
+    margin-bottom: $mb-1
+  .interests__container
+    column-gap: 2.5rem
+
