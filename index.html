@@ -1,12 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sass/styles.css">
 </head>
-<body>
-― Hello World! &#x1F609;
+<body class="">
+<header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Dmytro Riabtsun</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class="bx bx-home nav__icon"></i>Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#profile" class="nav__link">
+                        <i class="bx bx-user nav__icon"></i>Profile
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#education" class="nav__link">
+                        <i class="bx bx-book nav__icon"></i>Education
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="bx bx-receipt nav__icon"></i>Skills
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#experience" class="nav__link">
+                        <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#certificates" class="nav__link">
+                        <i class="bx bx-award nav__icon"></i>Certificates
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+        </div>
+    </nav>
+</header>
+<main class="l-main bd-container">
+    <div class="resume" id="area-cv">
+        <div class="resume__left">
+            <section class="home" id="home">
+                <div class="home__container section bd-grid">
+                    <div class="home__data bd-grid">
+                        <img src="assets/my_avatar.jfif" alt="photo" class="home__img">
+                        <h1 class="home__title">RIABTSUN <b>DMYTRO</b></h1>
+                        <h3 class="hone__profession">Frontend developer</h3>
+                        <div>
+                            <a download="" href="assets/riabtsun_frontend.pdf" class="home__button-movil">Download</a>
+                        </div>
+                    </div>
+                    <div class="home__address bd-grid">
+                        <span class="home__information">
+                            <i class="bx bx-map home__icon"></i> Dnipro Ukraine
+                        </span>
+                        <span class="home__information">
+                            <i class="bx bx-envelope home__icon"></i>riabtsun@i.ua
+                        </span>
+                        <span class="home__information">
+                            <i class="bx bx-phone home__icon"></i> 097-665-75-58
+                        </span>
+                    </div>
+                </div>
+                <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+            </section>
+            <section class="social section">
+                <h2 class="section-title">SOCIAL</h2>
+                <div class="social__container bd-grid">
+                    <a href="https://www.linkedin.com/in/riabtsun/" target="_blank" class="social__link">
+                        <i class='bx bxl-linkedin-square social__icon'></i>@riabtsun
+                    </a>
+                    <a href="https://instagram.com/revuchiy?igshid=MzNlNGNkZWQ4Mg==" target="_blank"
+                       class="social__link">
+                        <i class='bx bxl-instagram social__icon'></i>@revuchiy
+                    </a>
+                    <a href="https://www.tiktok.com/@fourforoneband?_t=8dFDGNDcJ6k&_r=1" target="_blank"
+                       class="social__link">
+                        <i class='bx bxl-tiktok social__icon'></i>@fourforoneband
+                    </a>
+                </div>
+            </section>
+            <section class="profile section" id="profile">
+                <h2 class="section-title">Profile</h2>
+                <p class="profile__description">
+                    Hi! I got acquainted with the possibility of internship offered by your company.
+                    I have commercial experience of efficiently coding websites using modern HTML, CSS and
+                    JavaScript, jQuery and also delivered on WordPress and Opencart. I am also actively studying
+                    React, which I have not yet used in commercial projects. In addition to my knowledge base, I
+                    actively seek out new technologies and stay on top of industry trends and advancements, quickly
+                    learning the material I need. I really want to develop professionally and increase my knowledge
+                    level.
+                </p>
+            </section>
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+                <div class="education__container bd-grid">
+                    <div class="education__content">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+                        <div class="education__data bd-grid">
+                            <h3 class="education-title">Lawyer</h3>
+                            <span class="education__studies">Dnipropetrovsk State University of Internal Affairs</span>
+                            <span class="education__year">2010 - 2015</span>
+                        </div>
+                    </div>
+                    <div class="education__content">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                        </div>
+                        <div class="education__data bd-grid">
+                            <h3 class="education-title">Frontend</h3>
+                            <span class="education__studies">Hillel it school, Dnipro</span>
+                            <span class="education__year">2020 - 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills__content bd-grid">
+                    <ul class="skills__data">
+                        <li class="skills__name"><span class="skills__circle"></span>Html</li>
+                        <li class="skills__name"><span class="skills__circle"></span>Css</li>
+                        <li class="skills__name"><span class="skills__circle"></span>Sass</li>
+                        <li class="skills__name"><span class="skills__circle"></span>JavaScript</li>
+                    </ul>
+                    <ul class="skills__data">
+                        <li class="skills__name"><span class="skills__circle"></span>React (in progress)</li>
+                        <li class="skills__name"><span class="skills__circle"></span>WordPress</li>
+                        <li class="skills__name"><span class="skills__circle"></span>OpenCart</li>
+                        <li class="skills__name"><span class="skills__circle"></span>Git</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="resume__right">
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience__container bd-grid">
+                    <div class="experience__content">
+                        <div class="experience__time">
+                            <span class="experience__rounder"></span>
+                            <span class="experience__line"></span>
+                        </div>
+
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">Junior Frontend Developer</h3>
+                            <span class="experience__company">From 2020 - 2021 | Twigel tech</span>
+                            <p class="experience__description">
+                                Work with CMS, Shopware 6,
+                                restyling default themes,
+                                creating custom CMS blocks/elements,
+                                changing layouts on TWIG;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience__content">
+                        <div class="experience__time">
+                            <span class="experience__rounder"></span>
+                        </div>
+
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">Web Developer</h3>
+                            <span class="experience__company">BaDM | 2021 - present</span>
+                            <p class="experience__description">
+                                Website creation on WordPress,
+                                company website administration,
+                                creating telegram bots;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="certificate section" id="certificates">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates__container bd-grid">
+                    <div class="certificates__content">
+                        <h3 class="certificates__title">
+                            <a target="_blank"
+                               href="https://certificate.ithillel.ua/view/57347071">
+                                Front End Basic 2020
+                            </a>
+                        </h3>
+                        <p class="certificates__description">Hillel IT school</p>
+                    </div>
+                    <div class="certificates__content">
+                        <h3 class="certificates__title">
+                            <a target="_blank"
+                               href="https://certificate.ithillel.ua/view/51105929">
+                                Front End Pro 2020
+                            </a>
+                        </h3>
+                        <p class="certificates__description">Hillel IT school</p>
+                    </div>
+                </div>
+            </section>
+            <section class="languages section">
+                <h2 class="section-title">Languages</h2>
+                <ul class="languages__content bd-grid">
+                    <li class="languages__name">
+                        <span class="languages__circle"></span> Ukrainian
+                    </li>
+                    <li class="languages__name">
+                        <span class="languages__circle"></span> English
+                    </li>
+                </ul>
+            </section>
+            <section class="interests section">
+                <h2 class="section-title">Interests</h2>
+                <div class="interests__container bd-grid">
+                    <div class="interests__content">
+                        <i class='bx bxs-piano interests__icon'></i>
+                        <span class="interests__name">Guitar</span>
+                    </div>
+                    <div class="interests__content">
+                        <i class='bx bx-headphone interests__icon'></i>
+                        <span class="interests__name">Music</span>
+                    </div>
+                    <div class="interests__content">
+                        <i class='bx bx-comment-detail interests__icon'></i>
+                        <span class="interests__name">Politics</span>
+                    </div>
+                    <div class="interests__content">
+                        <i class='bx bx-book interests__icon'></i>
+                        <span class="interests__name">Read</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+</a>
+<script src="js/html2pdf.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
