@@ -25,6 +25,11 @@ body {
   background-color: #FCFCFC;
   color: #403A3A;
 }
+@media screen and (min-width: 968px) {
+  body {
+    margin: 3rem 0;
+  }
+}
 
 h1, h2, h3, ul, p {
   margin: 0;
@@ -63,12 +68,37 @@ img {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+@media screen and (min-width: 968px) {
+  .section-title {
+    text-align: initial;
+  }
+}
 
+@media screen and (min-width: 968px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+  .resume__left {
+    background-color: #F0EFEF;
+  }
+  .resume__left, .resume__right {
+    padding: 0 1.5rem;
+  }
+}
 .bd-container {
   max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+@media screen and (min-width: 968px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .bd-grid {
@@ -85,6 +115,11 @@ img {
   background-color: #FCFCFC;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+}
+@media screen and (min-width: 968px) {
+  .l-header {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 968px) {
@@ -120,8 +155,14 @@ img {
 }
 .nav__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 0.5rem;
+}
+@media screen and (min-width: 320px) {
+  .nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 .nav__link {
   display: flex;
@@ -151,6 +192,11 @@ img {
 }
 .home__container {
   gap: 3rem;
+}
+@media screen and (min-width: 968px) {
+  .home__container {
+    gap: 1.5rem;
+  }
 }
 .home__data {
   gap: 0.5rem;
@@ -196,6 +242,11 @@ img {
   background-color: #403A3A;
   color: #FAFAFA;
 }
+@media screen and (min-width: 968px) {
+  .home__button-movil {
+    display: none;
+  }
+}
 
 .social__container {
   grid-template-columns: max-content;
@@ -217,6 +268,11 @@ img {
 
 .profile__description {
   text-align: center;
+}
+@media screen and (min-width: 968px) {
+  .profile__description {
+    text-align: initial;
+  }
 }
 
 .education__content,
@@ -268,6 +324,13 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
 }
+@media screen and (min-width: 968px) {
+  .skills__content,
+  .languages__content {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3.5rem;
+  }
+}
 .skills__name,
 .languages__name {
   display: flex;
@@ -292,6 +355,12 @@ img {
 .interests__container {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 1rem;
+}
+@media screen and (min-width: 968px) {
+  .interests__container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3.5rem;
+  }
 }
 .interests__content {
   display: flex;
@@ -321,6 +390,11 @@ img {
 .scrolltop__icon {
   font-size: 1.2rem;
   color: #403A3A;
+}
+@media screen and (min-width: 968px) {
+  .scrolltop {
+    display: none;
+  }
 }
 
 .show-scroll {

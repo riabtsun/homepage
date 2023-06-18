@@ -6,6 +6,9 @@
   width: calc(100% - 3rem)
   margin-left: $mb-3
   margin-right: $mb-3
+  @media screen and (min-width: 968px)
+    margin-left: auto
+    margin-right: auto
 
 .bd-grid
   display: grid
@@ -20,6 +23,8 @@
   background-color: $body-color
   box-shadow: 0 -1px 4px rgba(0,0,0,.1)
   transition: .3s
+  @media screen and (min-width: 968px)
+    display: none
 
 
 @media screen and (max-width: 968px)
@@ -51,8 +56,11 @@
     text-align: center
   &__list
     display: grid
-    grid-template-columns: repeat(3, 1fr)
-    gap: 2rem
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1rem .5rem
+    @media screen and (min-width: 320px)
+      grid-template-columns: repeat(3, 1fr)
+      gap: 2rem
   &__link
     display: flex
     flex-direction: column
@@ -76,6 +84,8 @@
   position: relative
   &__container
     gap: 3rem
+    @media screen and (min-width: 968px)
+      gap: 1.5rem
   &__data
     gap: .5rem
     text-align: center
@@ -111,6 +121,8 @@
     &:hover
       background-color: $text-color
       color: $container-color
+    @media screen and (min-width: 968px)
+      display: none
 
 
 .social
@@ -132,6 +144,8 @@
 .profile
   &__description
     text-align: center
+    @media screen and (min-width: 968px)
+      text-align: initial
 
 
 .education,
@@ -170,6 +184,9 @@
   &__content
     grid-template-columns: repeat(2, 1fr)
     gap: 0
+    @media screen and (min-width: 968px)
+      grid-template-columns: repeat(3, max-content)
+      column-gap: 3.5rem
   &__name
     display: flex
     align-items: center
@@ -193,6 +210,9 @@
   &__container
     grid-template-columns: repeat(3, 1fr)
     margin-top: $mb-2
+    @media screen and (min-width: 968px)
+      grid-template-columns: repeat(4, max-content)
+      column-gap: 3.5rem
   &__content
     display: flex
     flex-direction: column
@@ -218,6 +238,8 @@
   &__icon
     font-size: 1.2rem
     color: $text-color
+  @media screen and (min-width: 968px)
+    display: none
 
 .show-scroll
   visibility: visible
